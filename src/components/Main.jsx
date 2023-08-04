@@ -1,9 +1,9 @@
 import React from "react";
 import "./Main.css";
-import home1 from "../images/header/home-img-1.jpg";
-import home2 from "../images/header/home-img-2.jpg";
-import home3 from "../images/header/home-img-3.jpg";
-import home4 from "../images/header/home-img-4.jpg";
+import home1 from "../images/main-img/home-img-1.jpg";
+import home2 from "../images/main-img/home-img-2.jpg";
+import home3 from "../images/main-img/home-img-3.jpg";
+import home4 from "../images/main-img/home-img-4.jpg";
 
 const Main = () => {
 	return (
