@@ -1,0 +1,25 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	box-shadow: 0px 4px 5px -5px rgba(0, 0, 0, 0.23);
+	background-color: white;
+}
+
+.navbar-container {
+	height: 12rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo-img {
+	width: 5rem;
+}
+
+.nav-links {
+	text-transform: uppercase;
+	display: flex;
+	justify-content: flex-end;
+	gap: 2.5rem;
+}

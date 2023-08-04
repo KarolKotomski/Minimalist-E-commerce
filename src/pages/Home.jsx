@@ -9,24 +9,17 @@ import Footer from "../components/Footer";
 const Home = () => {
 	return (
 		<>
-			<div>
-				<Navbar />
-			</div>
-			<div>
-				<Main />
-			</div>
-			<div>
-				<Proud />
-			</div>
-			<div>
-				<Banner />
-			</div>
-			<div>
-				<Trending />
-			</div>
-			<div>
-				<Footer />
-			</div>
+			<Navbar />
+
+			<Main />
+
+			<Proud />
+
+			<Banner />
+
+			<Trending />
+
+			<Footer />
 		</>
 	);
 };
