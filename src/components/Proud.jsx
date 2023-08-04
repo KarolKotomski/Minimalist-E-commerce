@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const Proud = () => {
-  return (
-    <div>Proud</div>
-  )
-}
+	return (
+		<div className='proud'>
+			<div className='container'>
+				<div className='proud-container'>PROUD</div>
+			</div>
+		</div>
+	);
+};
 
-export default Proud
+export default Proud;

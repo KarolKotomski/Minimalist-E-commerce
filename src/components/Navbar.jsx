@@ -4,7 +4,7 @@ import logo from "../images/header/s-logo.png";
 
 const Navbar = () => {
 	return (
-		<div className="navbar">
+		<nav className="navbar">
 			<div className='container'>
 				<div className='navbar-container'>
 					<div className='logo'>
@@ -18,7 +18,7 @@ const Navbar = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</nav>
 	);
 };
 
