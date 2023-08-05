@@ -3,7 +3,7 @@ import "./Proud.css";
 import pic1 from "../images/products/1.jpg"
 
 
-const ProductItem = () => {
+const ProudItem = () => {
 	return (
 		<div className='product'>
 			<div className='product-header'>
@@ -18,4 +18,4 @@ const ProductItem = () => {
 	);
 };
 
-export default ProductItem;
+export default ProudItem; 

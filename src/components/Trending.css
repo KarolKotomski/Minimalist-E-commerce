@@ -1,0 +1,74 @@
+.trending {
+	padding-top: 7rem;
+}
+
+.title-btns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.title-btns h3 {
+	font-weight: 600;
+	font-size: 1.6rem;
+}
+
+.buttons button {
+	background-color: #373737;
+	border: none;
+	height: 2rem;
+	width: 2rem;
+	cursor: pointer;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	gap: 0.5rem;
+}
+
+.buttons img {
+	vertical-align: middle;
+	height: 1.5rem;
+}
+
+.trending-container {
+	display: flex;
+	gap: 1.3rem;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	padding: 1rem 0.5rem;
+	scroll-behavior: smooth;
+	white-space: nowrap;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.trending-container::-webkit-scrollbar {
+	display: none;
+
+	/* Hide scrollbar for IE, Edge and Firefox */
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+.product-trending-header img {
+	width: 13rem;
+}
+
+.product-trending {
+	outline: 2px solid rgba(0, 0, 0, 0.2);
+	outline-offset: -2px;
+	transition: outline 0.1s ease-in;
+}
+.product-trending:hover {
+	outline: 2px solid rgba(0, 0, 0, 0.7);
+}
+
+.product-trending-details {
+	font-size: 1rem;
+	padding: 1rem;
+}
+
+.item-trending-price {
+	font-size: 1.3rem;
+	font-weight: 600;
+	margin-top: 0.5rem;
+}

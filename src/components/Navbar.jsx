@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import logo from "../images/main-img/s-logo.png";
-import cart from "../images/cart/cart.png";
+import cart from "../images/icons/cart.png";
 
 const Navbar = () => {
 	return (
