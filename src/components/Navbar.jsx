@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import logo from "../images/main-img/s-logo.png";
+import cart from "../images/cart/cart.png";
 
 const Navbar = () => {
 	return (
@@ -9,13 +10,16 @@ const Navbar = () => {
 				<div className='navbar-container'>
 					<div className='logo'>
 						<a href=''>
-							<img src={logo} alt='logo' className='logo-img'></img>
+							<img src={logo} alt='logotype'></img>
 							<h1>online shop</h1>
 						</a>
 					</div>
 					<div className='nav-links'>
 						<a href=''>categories</a>
 						<a href=''>product page</a>
+						<a href=''>
+							<img src={cart} className='cart-icon'></img>
+						</a>
 					</div>
 				</div>
 			</div>

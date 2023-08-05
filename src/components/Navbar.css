@@ -14,7 +14,7 @@
 	align-items: center;
 }
 
-.logo-img {
+.logo img {
 	width: 5rem;
 }
 
@@ -38,9 +38,14 @@
 	display: flex;
 	justify-content: flex-end;
 	gap: 2.5rem;
+	align-items: center;
 }
 
 .nav-links a {
 	text-decoration: none;
 	color: black;
+}
+
+.cart-icon {
+	height: 2rem;
 }
