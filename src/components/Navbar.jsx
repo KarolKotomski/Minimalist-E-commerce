@@ -4,12 +4,13 @@ import logo from "../images/main-img/s-logo.png";
 
 const Navbar = () => {
 	return (
-		<nav className="navbar">
+		<nav className='navbar'>
 			<div className='container'>
 				<div className='navbar-container'>
 					<div className='logo'>
 						<a href=''>
 							<img src={logo} alt='logo' className='logo-img'></img>
+							<h1>online shop</h1>
 						</a>
 					</div>
 					<div className='nav-links'>
