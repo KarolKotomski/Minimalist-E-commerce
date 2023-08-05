@@ -1,0 +1,29 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-links {
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10rem;
+	height: 5rem;
+	width: 100%;
+}
+
+.footer a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+
+.design {
+	color: white;
+	background-color: cadetblue;
+	width: 100%;
+	text-align: center;
+}

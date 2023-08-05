@@ -1,33 +1,30 @@
 .newsletter {
-	padding-top: 7rem;
-}
-
-.newsletter-container {
+    margin-top: 7rem;
 	background-color: #373737;
 	color: white;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 10rem;
-    
+	height: 13rem;
 }
 
-.newsletter-container h2 {
-	font-size: 1.5rem;
+.newsletter h2 {
+	font-size: 2rem;
 	padding-bottom: 1rem;
 	font-weight: 400;
 }
 
-.newsletter-container button,
-.newsletter-container input {
-	font-size: 1rem;
+.newsletter button,
+.newsletter input {
+	font-size: 1.3rem;
 	border: none;
-	padding: 0.3rem;
-    text-decoration: none;
+	padding: 0.5rem;
+	text-decoration: none;
+	outline: none;
 }
 
-.newsletter-container button {
+.newsletter button {
 	cursor: pointer;
-    margin-left: 1rem;
+	margin-left: 1rem;
 }
