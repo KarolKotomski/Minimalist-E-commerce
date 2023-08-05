@@ -1,13 +1,16 @@
+.main {
+    padding-top: 8.5rem
+}
+
 .main-container {
 	display: grid;
-	height: 40rem;
+	height: 30rem;
 	grid-template-columns: 2fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	grid-template-areas:
 		"one two three"
 		"one two four";
 	gap: 1rem;
-    padding-top: 8.5rem;
 }
 
 .element1 {

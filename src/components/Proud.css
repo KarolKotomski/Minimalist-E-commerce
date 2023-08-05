@@ -1,6 +1,9 @@
+.proud {
+	padding-top: 5rem;
+}
+
 .proud h2 {
-	margin-top: 5rem;
-	margin-bottom: 2rem;
+	padding-bottom: 2rem;
 	font-weight: 600;
     font-size: 1.6rem;
 }
