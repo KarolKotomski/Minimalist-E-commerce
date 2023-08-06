@@ -1,0 +1,17 @@
+.product-page-container {
+    padding-top: 8.5rem;
+    height: 50rem;
+    display: flex;
+}
+
+.big-img img {
+    height: 10rem;
+}
+
+.small-imgs img {
+    height: 5rem;
+}
+
+.specifications {
+    display: flex;
+}

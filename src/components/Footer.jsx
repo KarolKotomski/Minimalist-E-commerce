@@ -11,7 +11,7 @@ const Footer = () => {
 				<a href=''>Contact Us</a>
 			</div>
 			<div className='design'>
-				<a href=''>Design mostly by Abderraouf</a>
+				<a href=''>Design by Abderraouf</a>
 			</div>
 		</footer>
 	);

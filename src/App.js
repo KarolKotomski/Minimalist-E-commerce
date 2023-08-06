@@ -1,12 +1,12 @@
 import React from "react";
-import Home from "./pages/Home";
+import ProductPage from "./pages/ProductPage";
 import Navbar from "./components/Navbar";
 
 const App = () => {
 	return (
 		<>
 			<Navbar />
-			<Home />
+			<ProductPage />
 		</>
 	);
 };
