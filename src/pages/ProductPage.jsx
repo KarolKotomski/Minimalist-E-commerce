@@ -10,7 +10,6 @@ const ProductPage = () => {
 			<div className='container'>
 				<div className='product-page-container'>
 					<div className='product-div'>
-						<h3>TITLE</h3>
 						<div className='product-left-side'>
 							<div className='big-img'>
 								<img src={pic19} alt='comfy chair' />
@@ -22,17 +21,23 @@ const ProductPage = () => {
 							</div>
 						</div>
 						<div className='product-right-side'>
+							<h3 className='title-header'>TITLE</h3>
 							<p className='product-spec'>description</p>
 							<div className='product-quant'>
-								<p>Quantity</p>
+								<div className="quant-container">
+									<p className='quant-price-text'>Quantity</p>
+								</div>
+
 								<div className='quantity-btns'>
 									<button>-</button>
-									<p>number</p>
+									<p className='count-number'>0</p>
 									<button>+</button>
 								</div>
-								<p className='product-price'>price</p>
+								<div className="price-container">
+									<p className='quant-price-text'>900$</p>
+								</div>
 							</div>
-							<div className='shoping-buttons'>
+							<div className='shopping-buttons'>
 								<button className='atc-button'>add to cart</button>
 								<button className='buy-btn'>buy now</button>
 							</div>
@@ -40,21 +45,21 @@ const ProductPage = () => {
 					</div>
 					<div className='specifications'>
 						<div className='spec'>
-							<p>Texture:</p>
-							<p>texture text</p>
+							<p className='spec-type'>Texture:</p>
+							<p className='spec-text'>text</p>
 						</div>
 						<div className='spec'>
-							<p>Texture:</p>
-							<p>texture text</p>
+							<p className='spec-type'>Weight:</p>
+							<p className='spec-text'>text</p>
 						</div>
 						<div className='spec'>
-							<p>Texture:</p>
-							<p>texture text</p>
+							<p className='spec-type'>Size:</p>
+							<p className='spec-text'>text</p>
 						</div>
 					</div>
 				</div>
-            </div>
-            <Trending />
+			</div>
+			<Trending />
 			<Footer />
 		</div>
 	);

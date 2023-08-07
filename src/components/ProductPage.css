@@ -1,17 +1,137 @@
 .product-page-container {
-    padding-top: 8.5rem;
-    height: 50rem;
-    display: flex;
+	padding-top: 8.5rem;
+	height: 60rem;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.4rem;
+}
+
+.product-div {
+	display: flex;
+	height: 30rem;
+}
+
+.product-quant {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem 0;
+}
+
+.quant-container {
+	text-align: center;
+}
+
+.price-container {
+	text-align: end;
+	padding-right: 2rem;
+}
+
+.big-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80%;
+	overflow: hidden;
+	padding: 1rem;
 }
 
 .big-img img {
-    height: 10rem;
+	object-fit: cover;
+	width: 75%;
+}
+
+.small-imgs {
+	height: 20%;
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
 }
 
 .small-imgs img {
-    height: 5rem;
+	height: 100%;
+}
+
+.product-left-side {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	justify-content: space-between;
+}
+
+.quant-price-text {
+	font-weight: 600;
+	font-size: 1.7rem;
+}
+
+.shopping-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.atc-button,
+.buy-btn {
+	padding: 0.5rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    width: 45%;
+    
+}
+
+.product-right-side {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	align-items: center;
+	background-color: #e9e9e9;
+	padding: 3rem;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.quantity-btns {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.quantity-btns button {
+	width: 3rem;
+	height: 3rem;
+	font-size: 2rem;
+}
+
+.count-number {
+	display: flex;
+	width: 3rem;
+	height: 3rem;
+	justify-content: center;
+	align-items: center;
 }
 
 .specifications {
-    display: flex;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 5rem;
+}
+
+.spec {
+	background-color: #e9e9e9;
+	width: 30%;
+	padding: 0.3rem;
+}
+.specifications p {
+	padding: 0.5rem;
+	text-align: center;
+}
+
+.spec-type {
+	font-size: 1.7rem;
+	font-weight: 600;
+}
+
+.title-header {
+	font-size: 2.5rem;
 }
