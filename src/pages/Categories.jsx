@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import CategoriesMain from "../components/CategoriesMain";
+import Newsletter from "../components/Newsletter";
+import Footer from "../components/Footer";
 
 const Categories = () => {
-  return (
-    <div>Categories</div>
-  )
-}
+	return (
+		<>
+			<CategoriesMain />
 
-export default Categories
+			<Newsletter />
+
+			<Footer />
+		</>
+	);
+};
+
+export default Categories;
