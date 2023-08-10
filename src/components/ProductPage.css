@@ -1,6 +1,6 @@
 .product-page-container {
 	padding-top: 8.5rem;
-	height: 60rem;
+	height: 50rem;
 	display: flex;
 	flex-direction: column;
 	font-size: 1.4rem;
@@ -62,22 +62,31 @@
 
 .quant-price-text {
 	font-weight: 600;
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 }
 
 .shopping-buttons {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
 }
 
 .atc-button,
 .buy-btn {
 	padding: 0.5rem;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    width: 45%;
-    
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	width: 45%;
+}
+
+.atc-button {
+	background-color:#e9e9e9;
+}
+
+.buy-btn {
+	background-color: #b6002c;
+	border: none;
+	color: white;
 }
 
 .product-right-side {
@@ -98,8 +107,8 @@
 }
 
 .quantity-btns button {
-	width: 3rem;
 	height: 3rem;
+	width: 3rem;
 	font-size: 2rem;
 }
 
@@ -133,5 +142,5 @@
 }
 
 .title-header {
-	font-size: 2.5rem;
+	font-size: 2rem;
 }

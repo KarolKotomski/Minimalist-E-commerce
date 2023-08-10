@@ -1,6 +1,7 @@
 import React from "react";
 import "../components/ProductPage.css";
 import Trending from "../components/Trending";
+import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
 import pic19 from "../images/products/19.jpg";
 
@@ -21,10 +22,10 @@ const ProductPage = () => {
 							</div>
 						</div>
 						<div className='product-right-side'>
-							<h3 className='title-header'>TITLE</h3>
+							<h3 className='title-header'>Comfy chair</h3>
 							<p className='product-spec'>description</p>
 							<div className='product-quant'>
-								<div className="quant-container">
+								<div className='quant-container'>
 									<p className='quant-price-text'>Quantity</p>
 								</div>
 
@@ -33,7 +34,7 @@ const ProductPage = () => {
 									<p className='count-number'>0</p>
 									<button>+</button>
 								</div>
-								<div className="price-container">
+								<div className='price-container'>
 									<p className='quant-price-text'>900$</p>
 								</div>
 							</div>
@@ -60,6 +61,7 @@ const ProductPage = () => {
 				</div>
 			</div>
 			<Trending />
+			<Newsletter />
 			<Footer />
 		</div>
 	);
