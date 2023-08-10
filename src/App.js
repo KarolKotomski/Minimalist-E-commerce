@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import ProductPage from "./pages/ProductPage";
 import Categories from "./pages/Categories";
+import NoMatch from "./components/NoMatch";
 
 const App = () => {
 	return (
@@ -13,6 +14,7 @@ const App = () => {
 				<Route path='/' element={<Home />} />
 				<Route path='categories' element={<Categories />} />
 				<Route path='productpage' element={<ProductPage />} />
+				<Route path='*' element={<NoMatch />} />
 			</Routes>
 		</>
 	);
