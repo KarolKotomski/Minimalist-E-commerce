@@ -21,6 +21,10 @@
 	font-size: 1.2rem;
 }
 
+.footer a:hover {
+	color: #b6002c;
+}
+
 .design {
 	color: white;
 	background-color: cadetblue;

@@ -46,6 +46,10 @@
 	color: black;
 }
 
+.nav-links a:hover {
+	text-decoration: underline;
+}
+
 .cart-icon {
 	height: 2rem;
 }

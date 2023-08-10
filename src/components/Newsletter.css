@@ -27,4 +27,10 @@
 .newsletter button {
 	cursor: pointer;
 	margin-left: 1rem;
+	background-color: #b6002c;
+	color: white;
+}
+
+.newsletter button:hover {
+	opacity: 0.8;
 }
