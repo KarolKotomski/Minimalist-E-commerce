@@ -53,6 +53,10 @@
 	text-transform: uppercase;
 }
 
+.text-side button:hover {
+	color: #b6002c;
+}
+
 .text {
 	display: flex;
 	flex-direction: column;

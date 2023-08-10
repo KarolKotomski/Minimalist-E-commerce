@@ -13,11 +13,11 @@
 	gap: 10rem;
 	height: 5rem;
 	width: 100%;
+	text-transform: capitalize;
 }
 
 .footer a {
 	color: white;
-	text-decoration: none;
 	font-size: 1.2rem;
 }
 

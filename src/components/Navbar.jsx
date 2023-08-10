@@ -2,6 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import logo from "../images/main-img/s-logo.png";
 import cart from "../images/icons/cart.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 	return (
@@ -9,17 +10,17 @@ const Navbar = () => {
 			<div className='container'>
 				<div className='navbar-container'>
 					<div className='logo'>
-						<a href=''>
+						<Link to='/'>
 							<img src={logo} alt='logotype'></img>
 							<h1>online shop</h1>
-						</a>
+						</Link>
 					</div>
 					<div className='nav-links'>
-						<a href=''>categories</a>
-						<a href=''>product page</a>
-						<a href=''>
+						<Link to='/categories'>categories</Link>
+						<Link to='/productpage'>product page</Link>
+						<Link to='/cart'>
 							<img src={cart} className='cart-icon'></img>
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>

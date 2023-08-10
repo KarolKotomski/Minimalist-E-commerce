@@ -1,6 +1,7 @@
 import React from "react";
 import "./Banner.css";
 import banner2 from "../images/banner/banner2.jpg";
+import { Link } from "react-router-dom";
 
 const BannerReverse = () => {
 	return (
@@ -10,7 +11,9 @@ const BannerReverse = () => {
 					<div className='text-side'>
 						<div className='text'>
 							<h2>Comfortable and elegant living</h2>
-							<button>shop now</button>
+							<Link>
+								<button>shop now</button>
+							</Link>
 						</div>
 					</div>
 					<div className='img-side'>

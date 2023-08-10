@@ -1,5 +1,5 @@
 .newsletter {
-    margin-top: 7rem;
+	margin-top: 7rem;
 	background-color: #373737;
 	color: white;
 	display: flex;
@@ -20,7 +20,6 @@
 	font-size: 1.3rem;
 	border: none;
 	padding: 0.5rem;
-	text-decoration: none;
 	outline: none;
 }
 
