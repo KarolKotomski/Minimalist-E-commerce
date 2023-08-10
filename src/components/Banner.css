@@ -48,13 +48,14 @@
 	color: white;
 	padding: 0.7rem;
 	font-size: 1.3rem;
-	width: 40%;
+	width: 100%;
 	border: none;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 
 .text-side button:hover {
-	color: #b6002c;
+	opacity: 0.8;;
 }
 
 .text {

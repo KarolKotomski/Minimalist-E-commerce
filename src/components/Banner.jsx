@@ -11,7 +11,7 @@ const Banner = () => {
 					<div className='text-side'>
 						<div className='text'>
 							<h2>Creative harmonious living</h2>
-							<Link>
+							<Link to="/">
 								<button>shop now</button>
 							</Link>
 						</div>

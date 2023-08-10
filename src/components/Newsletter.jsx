@@ -7,7 +7,7 @@ const Newsletter = () => {
 			<h2>Subscribe to the Newsletter!</h2>
 			<form>
 				<input type='email' placeholder='your@email.com' />
-				<button type='submit'>Subscribe</button>
+				<button>subscribe</button>
 			</form>
 		</div>
 	);

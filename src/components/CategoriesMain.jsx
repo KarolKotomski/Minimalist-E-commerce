@@ -21,7 +21,7 @@ const CategoriesMain = () => {
                             <button>skin care</button>
                         </div>
 					</div>
-					<div className='proud-container'>
+					<div className='cat-container'>
 						<ProudItem />
 						<ProudItem />
 						<ProudItem />
