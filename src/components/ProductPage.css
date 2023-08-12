@@ -12,23 +12,40 @@
 }
 
 .product-quant {
+	display: grid;
+	grid-template-columns: 33.3% auto 33.3%;
 	width: 100%;
 	font-size: 1.5rem;
+	align-items: center;
+	
 }
 
 .quant-container {
-	position: relative;
-	top: 2.2rem;
-	width: fit-content;
-	padding: 0 2.5rem;
+	text-align: center;
+}
+
+.quantity-btns {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 }
 
+.quantity-btns button {
+	height: 3rem;
+	width: 3rem;
+	font-size: 2rem;
+	background-color: #e9e9e9;
+	cursor: pointer;
+}
+
+.quantity-btns button:hover {
+	background-color: black;
+	color: white;
+	border: none;
+}
 .price-container {
-	float: right;
-	position: relative;
-	bottom: 2.2rem;
-	width: fit-content
+	text-align: center;
 }
 
 .big-img {
@@ -71,7 +88,7 @@
 .shopping-buttons {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	width: 100%;
 }
 
@@ -80,7 +97,7 @@
 	padding: 0.5rem;
 	font-size: 1.3rem;
 	text-transform: uppercase;
-	width: 45%;
+	width: 40%;
 	background-color: #e9e9e9;
 	border-style: solid;
 	cursor: pointer;
@@ -112,27 +129,6 @@
 	padding: 3rem;
 	justify-content: space-between;
 	height: 100%;
-}
-
-.quantity-btns {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.quantity-btns button {
-	height: 3rem;
-	width: 3rem;
-	font-size: 2rem;
-	background-color: #e9e9e9;
-	cursor: pointer;
-}
-
-.quantity-btns button:hover {
-	background-color: black;
-	color: white;
-	border: none;
-
 }
 
 .count-number {
