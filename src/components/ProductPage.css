@@ -3,7 +3,7 @@
 	height: 50rem;
 	display: flex;
 	flex-direction: column;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 }
 
 .product-div {
@@ -12,20 +12,19 @@
 }
 
 .product-quant {
-	display: flex;
 	width: 100%;
+	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	padding: 2rem 0;
+
 }
 
 .quant-container {
-	text-align: center;
+	padding: 0 3.1rem;
 }
 
 .price-container {
 	text-align: end;
-	padding-right: 2rem;
+	padding-left: 5rem;
 }
 
 .big-img {
@@ -51,6 +50,7 @@
 
 .small-imgs img {
 	height: 100%;
+	cursor: pointer;
 }
 
 .product-left-side {
@@ -62,11 +62,11 @@
 
 .quant-price-text {
 	font-weight: 600;
-	font-size: 1.5rem;
 }
 
 .shopping-buttons {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 100%;
 }
