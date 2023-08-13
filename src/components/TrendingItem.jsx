@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { items } from "./AllData";
 
 const TrendingItem = () => {
-	const filteredItems = items.filter((item) => item.id >= 8);
+	const filteredItems = items.filter((item) => item.id > 8);
 
 	return (
 		<>

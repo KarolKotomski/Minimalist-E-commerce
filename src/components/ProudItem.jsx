@@ -4,25 +4,23 @@ import { Link } from "react-router-dom";
 import { items } from "./AllData";
 
 const ProudItem = () => {
-	let filteredItems = items.filter((item) => item.id <= 8);
+	const filteredItems = items.filter((item) => item.id <= 8);
 
 	return (
 		<>
-			{
-				(filteredItems = items.map((item) => (
-					<div className='product' key={item.id}>
-						<Link>
-							<div className='product-header'>
-								<img src={item.img} alt=''></img>
-							</div>
-							<div className='product-details'>
-								<p>{item.description}</p>
-								<p className='item-price'>{item.price} $</p>
-							</div>
-						</Link>
-					</div>
-				)))
-			}
+			{filteredItems.map((item) => (
+				<div className='product' key={item.id}>
+					<Link>
+						<div className='product-header'>
+							<img src={item.img} alt=''></img>
+						</div>
+						<div className='product-details'>
+							<p>{item.description}</p>
+							<p className='item-price'>{item.price} $</p>
+						</div>
+					</Link>
+				</div>
+			))}
 		</>
 	);
 };
