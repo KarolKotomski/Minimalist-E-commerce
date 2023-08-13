@@ -1,21 +1,29 @@
 import React from "react";
 import "./Proud.css";
-import pic1 from "../images/products/1.jpg";
 import { Link } from "react-router-dom";
+import { items } from "./AllData";
 
 const ProudItem = () => {
+	let filteredItems = items.filter((item) => item.id <= 8);
+
 	return (
-		<Link to="/">
-			<div className='product'>
-				<div className='product-header'>
-					<img src={pic1}></img>
-				</div>
-				<div className='product-details'>
-					<p>description</p>
-					<p className='item-price'>price</p>
-				</div>
-			</div>
-		</Link>
+		<>
+			{
+				(filteredItems = items.map((item) => (
+					<div className='product' key={item.id}>
+						<Link>
+							<div className='product-header'>
+								<img src={item.img} alt=''></img>
+							</div>
+							<div className='product-details'>
+								<p>{item.description}</p>
+								<p className='item-price'>{item.price} $</p>
+							</div>
+						</Link>
+					</div>
+				)))
+			}
+		</>
 	);
 };
 

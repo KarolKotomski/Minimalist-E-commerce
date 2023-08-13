@@ -9,13 +9,6 @@ const Proud = () => {
 			<div className='container'>
 				<div className='proud-container'>
 					<ProudItem />
-					<ProudItem />
-					<ProudItem />
-					<ProudItem />
-					<ProudItem />
-					<ProudItem />
-					<ProudItem />
-					<ProudItem />
 				</div>
 			</div>
 		</div>
