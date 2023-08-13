@@ -11,7 +11,7 @@ const BannerReverse = () => {
 					<div className='text-side'>
 						<div className='text'>
 							<h2>Comfortable and elegant living</h2>
-							<Link>
+							<Link to='categories/all' onClick={() => window.scrollTo(0, 0)}>
 								<button>shop now</button>
 							</Link>
 						</div>

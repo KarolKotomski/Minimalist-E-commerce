@@ -11,7 +11,7 @@ const Banner = () => {
 					<div className='text-side'>
 						<div className='text'>
 							<h2>Creative harmonious living</h2>
-							<Link to="/">
+							<Link to="categories/all" onClick={() => window.scrollTo(0, 0)}>
 								<button>shop now</button>
 							</Link>
 						</div>

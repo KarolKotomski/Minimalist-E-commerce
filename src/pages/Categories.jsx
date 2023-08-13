@@ -9,14 +9,12 @@ const Categories = () => {
 	return (
 		<>
 			<CategoriesHeader />
-
-			<CategoriesItem />
+			
+			<Outlet />
 
 			<Newsletter />
 
 			<Footer />
-
-			<Outlet />
 		</>
 	);
 };

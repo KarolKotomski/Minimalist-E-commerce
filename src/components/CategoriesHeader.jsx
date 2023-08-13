@@ -2,7 +2,7 @@ import React from "react";
 import "../components/CategoriesHeader.css";
 import { Link } from "react-router-dom";
 
-const CategoriesMain = () => {
+const CategoriesHeader = () => {
 	return (
 		<div className='categories-main'>
 			<div className='proud'>
@@ -41,4 +41,4 @@ const CategoriesMain = () => {
 	);
 };
 
-export default CategoriesMain;
+export default CategoriesHeader;
