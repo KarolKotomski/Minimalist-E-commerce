@@ -1,6 +1,7 @@
 import React from "react";
 import "../components/CategoriesHeader.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const CategoriesHeader = () => {
 	return (
@@ -12,7 +13,7 @@ const CategoriesHeader = () => {
 							<h1>select category:</h1>
 						</div>
 						<div className='filter-btns'>
-							<Link to="all">
+							<Link to='all'>
 								<button>all products</button>
 							</Link>
 							<Link to='chairs'>

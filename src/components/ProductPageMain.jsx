@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import "../components/ProductPage.css";
 import { items } from "../components/AllData";
+import { useParams } from "react-router-dom";
 
 const ProductPageMain = () => {
+	const { id } = useParams;
+
+	
 	const [image, setImage] = useState(items[0].img);
 	const [quantity, setQuantity] = useState(1);
 
@@ -24,8 +28,7 @@ const ProductPageMain = () => {
 
 	const calcPrice = (quantity) => {
 		return quantity * items[0].price;
-
-	}
+	};
 
 	return (
 		<>
