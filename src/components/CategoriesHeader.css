@@ -1,0 +1,32 @@
+.cat-main-container {
+	padding-top: 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cat-main-header {
+	padding-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+.filter-btns {
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 5rem;
+}
+
+.filter-btns button {
+	font-size: 1rem;
+	padding: 0 1.2rem;
+	background-color: white;
+	border: none;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.filter-btns button:hover {
+    background-color: black;
+    color: white;
+}

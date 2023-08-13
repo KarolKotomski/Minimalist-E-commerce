@@ -1,16 +1,22 @@
 import React from "react";
-import CategoriesMain from "../components/CategoriesMain";
+import CategoriesHeader from "../components/CategoriesHeader";
+import CategoriesItem from "../components/CategoriesItem";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
+import { Outlet } from "react-router-dom";
 
 const Categories = () => {
 	return (
 		<>
-			<CategoriesMain />
+			<CategoriesHeader />
+
+			<CategoriesItem />
 
 			<Newsletter />
 
 			<Footer />
+
+			<Outlet />
 		</>
 	);
 };
