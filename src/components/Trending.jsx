@@ -31,18 +31,6 @@ const Trending = () => {
 				</div>
 				<div className='trending-container' id='slider'>
 					<TrendingItem />
-					<TrendingItem />
-					<TrendingItem />
-					<TrendingItem />
-					<TrendingItem />
-					<TrendingItem />
-					<TrendingItem />
-					<TrendingItem />
-					<TrendingItem />
-					<TrendingItem />
-					<TrendingItem />
-					<TrendingItem />
-					<TrendingItem />
 				</div>
 			</div>
 		</div>

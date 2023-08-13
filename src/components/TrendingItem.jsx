@@ -1,21 +1,27 @@
 import React from "react";
-import pic8 from "../images/products/8.jpg";
 import "./Trending.css";
 import { Link } from "react-router-dom";
+import { items } from "./AllData";
 
 const TrendingItem = () => {
+	const filteredItems = items.filter((item) => item.id >= 8);
+
 	return (
-		<Link>
-			<div className='product-trending'>
-				<div className='product-trending-header'>
-					<img src={pic8}></img>
+		<>
+			{filteredItems.map((item) => (
+				<div className='product-trending' key={item.id}>
+					<Link>
+						<div className='product-trending-header'>
+							<img src={item.img} alt=""></img>
+						</div>
+						<div className='product-trending-details'>
+							<p>{item.description}</p>
+							<p className='item-trending-price'>{item.price} $</p>
+						</div>
+					</Link>
 				</div>
-				<div className='product-trending-details'>
-					<p>description</p>
-					<p className='item-trending-price'>price</p>
-				</div>
-			</div>
-		</Link>
+			))}
+		</>
 	);
 };
 
