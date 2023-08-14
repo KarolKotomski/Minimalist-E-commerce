@@ -12,28 +12,36 @@ const Main = () => {
 			<div className='container'>
 				<div className='main-container'>
 					<div className='element1 featured'>
-						<Link>
+						<Link
+							to='categories/furnitures'
+							onClick={() => window.scrollTo(0, 0)}>
 							<div className='overlay'></div>
 							<img src={home1}></img>
 							<p className='main-description'>Live comfortably</p>
 						</Link>
 					</div>
 					<div className='element2 featured'>
-						<Link>
+						<Link
+							to='categories/skin-care'
+							onClick={() => window.scrollTo(0, 0)}>
 							<div className='overlay'></div>
 							<img src={home2}></img>
 							<p className='main-description'>Skincare</p>
 						</Link>
 					</div>
 					<div className='element3 featured'>
-						<Link>
+						<Link
+							to='categories/kitchen'
+							onClick={() => window.scrollTo(0, 0)}>
 							<div className='overlay'></div>
 							<img src={home3}></img>
 							<p className='main-description'>Kitchen</p>
 						</Link>
 					</div>
 					<div className='element4 featured'>
-						<Link>
+						<Link
+							to='categories/electronics'
+							onClick={() => window.scrollTo(0, 0)}>
 							<div className='overlay'></div>
 							<img src={home4}></img>
 							<p className='main-description'>Electronics</p>
