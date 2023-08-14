@@ -14,6 +14,8 @@ import ProductPage from "./components/ProductPage";
 import NoMatch from "./components/NoMatch";
 import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
 	return (
@@ -36,6 +38,18 @@ const App = () => {
 			</Routes>
 			<Newsletter />
 			<Footer />
+			<ToastContainer
+				position='top-center'
+				autoClose={3000}
+				hideProgressBar={false}
+				newestOnTop
+				closeOnClick
+				rtl={false}
+				pauseOnFocusLoss
+				draggable
+				pauseOnHover={false}
+				theme='colored'
+			/>
 		</>
 	);
 };

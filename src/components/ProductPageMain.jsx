@@ -72,7 +72,10 @@ const ProductPageMain = () => {
 									</div>
 								</div>
 								<div className='shopping-buttons'>
-									<button className='atc-button'>add to cart</button>
+									<button
+										className='atc-button'>
+										add to cart
+									</button>
 									<button className='buy-btn'>buy now</button>
 								</div>
 							</div>
