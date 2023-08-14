@@ -3,15 +3,16 @@ import { items } from "../AllData";
 import { Link } from "react-router-dom";
 
 const Chairs = () => {
+	const filteredItems = items.filter((item) => item.category === "chair");
 
-        const filteredItems = items.filter((item) => item.category === "chair");
-
-    return (
+	return (
 		<>
 			<div className='proud-container container'>
 				{filteredItems.map((item) => (
 					<div className='product' key={item.id}>
-						<Link>
+						<Link
+							onClick={() => window.scrollTo(0, 0)}
+							to={`/product/${item.id}`}>
 							<div className='product-header'>
 								<img src={item.img} alt=''></img>
 							</div>

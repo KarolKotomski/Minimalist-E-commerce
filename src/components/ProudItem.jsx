@@ -10,7 +10,9 @@ const ProudItem = () => {
 		<>
 			{filteredItems.map((item) => (
 				<div className='product' key={item.id}>
-					<Link>
+					<Link
+						onClick={() => window.scrollTo(0, 0)}
+						to={`/product/${item.id}`}>
 						<div className='product-header'>
 							<img src={item.img} alt=''></img>
 						</div>

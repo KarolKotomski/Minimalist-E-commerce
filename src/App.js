@@ -10,8 +10,10 @@ import Furnitures from "./components/Categories-pages/Furnitures";
 import Kitchen from "./components/Categories-pages/Kitchen";
 import Lamps from "./components/Categories-pages/Lamps";
 import SkinCare from "./components/Categories-pages/SkinCare";
-import ProductPage from "./pages/ProductPage";
+import ProductPage from "./components/ProductPage";
 import NoMatch from "./components/NoMatch";
+import Newsletter from "./components/Newsletter";
+import Footer from "./components/Footer";
 
 const App = () => {
 	return (
@@ -29,9 +31,11 @@ const App = () => {
 					<Route path='lamps' element={<Lamps />} />
 					<Route path='skin-care' element={<SkinCare />} />
 				</Route>
-				<Route path='productpage' element={<ProductPage />} />
+				<Route path='product/:id' element={<ProductPage />} />
 				<Route path='*' element={<NoMatch />} />
 			</Routes>
+			<Newsletter />
+			<Footer />
 		</>
 	);
 };

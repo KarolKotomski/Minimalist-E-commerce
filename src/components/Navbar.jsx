@@ -17,9 +17,8 @@ const Navbar = () => {
 					</div>
 					<div className='nav-links'>
 						<Link to='/categories'>categories</Link>
-						<Link to='/productpage'>product page</Link>
 						<Link to='/cart'>
-							<img src={cart} className='cart-icon'></img>
+							<img src={cart} className='cart-icon' alt=""></img>
 						</Link>
 					</div>
 				</div>
