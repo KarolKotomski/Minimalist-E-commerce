@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import "../components/ProductPage.css";
 import { items } from "../components/AllData";
+import { useParams } from "react-router-dom";
 
 const ProductPageMain = () => {
-	const [image, setImage] = useState(items[0].img);
+	const { id } = useParams();
+	const item = items.filter((item) => item.id === Number(id));
+
+	const [image, setImage] = useState(item[0].img);
 	const [quantity, setQuantity] = useState(1);
 
 	const changeImage = (e) => {
@@ -23,7 +27,7 @@ const ProductPageMain = () => {
 	};
 
 	const calcPrice = (quantity) => {
-		return quantity * items[0].price;
+		return quantity * item[0].price;
 	};
 
 	return (
@@ -37,22 +41,22 @@ const ProductPageMain = () => {
 									<img src={image} alt='' />
 								</div>
 								<div className='small-imgs'>
-									<img src={items[0].img} alt='' onMouseOver={changeImage} />
+									<img src={item[0].img} alt='' onMouseOver={changeImage} />
 									<img
-										src={items[0].otherImgs[0]}
+										src={item[0].otherImgs[0]}
 										alt=''
 										onMouseOver={changeImage}
 									/>
 									<img
-										src={items[0].otherImgs[1]}
+										src={item[0].otherImgs[1]}
 										alt=''
 										onMouseOver={changeImage}
 									/>
 								</div>
 							</div>
 							<div className='product-right-side'>
-								<h3 className='title-header'>{items[0].description}</h3>
-								<p className='product-spec'>{items[0].specs}</p>
+								<h3 className='title-header'>{item[0].description}</h3>
+								<p className='product-spec'>{item[0].specs}</p>
 								<div className='product-quant'>
 									<div className='quant-container'>
 										<p className='quant-price-text'>Quantity</p>
@@ -76,15 +80,15 @@ const ProductPageMain = () => {
 						<div className='specifications'>
 							<div className='spec'>
 								<p className='spec-type'>Texture:</p>
-								<p className='spec-text'>{items[0].texture}</p>
+								<p className='spec-text'>{item[0].texture}</p>
 							</div>
 							<div className='spec'>
 								<p className='spec-type'>Weight:</p>
-								<p className='spec-text'>{items[0].weight}</p>
+								<p className='spec-text'>{item[0].weight}</p>
 							</div>
 							<div className='spec'>
 								<p className='spec-type'>Size:</p>
-								<p className='spec-text'>{items[0].size}</p>
+								<p className='spec-text'>{item[0].size}</p>
 							</div>
 						</div>
 					</div>
