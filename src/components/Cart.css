@@ -1,0 +1,29 @@
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+    align-items: center;
+}
+
+.cart-container img {
+    padding: 3rem;
+}
+
+.cart-container p {
+    padding-bottom: 3rem;
+    font-size: 1.3rem;
+}
+
+.cart-container button {
+	background-color: #373737;
+	color: white;
+	padding: 0.7rem;
+	font-size: 1.3rem;
+	border: none;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.cart-container button:hover {
+	opacity: 0.8;;
+}
