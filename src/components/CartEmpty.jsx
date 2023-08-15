@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 const CartEmpty = () => {
 	return (
-		<div className='cart'>
+		<div className='cart-empty'>
 			<div className='container'>
-				<div className='cart-container'>
+				<div className='cart-empty-container'>
 					<img src={emptyPicture} alt='' />
 					<p>Your cart is empty</p>
 					<Link to="/categories">

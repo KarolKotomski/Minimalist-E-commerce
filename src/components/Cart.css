@@ -1,20 +1,26 @@
-.cart-container {
-    display: flex;
-    flex-direction: column;
-    padding-top: 8rem;
-    align-items: center;
+/*empty cart */
+
+.cart {
+	padding-top: 8rem;
 }
 
-.cart-container img {
-    padding: 3rem;
+.cart-empty-container {
+	display: flex;
+	flex-direction: column;
+	padding-top: 8rem;
+	align-items: center;
 }
 
-.cart-container p {
-    padding-bottom: 3rem;
-    font-size: 1.3rem;
+.cart-empty-container img {
+	padding: 3rem;
 }
 
-.cart-container button {
+.cart-empty-container p {
+	padding-bottom: 3rem;
+	font-size: 1.3rem;
+}
+
+.cart-empty-container button {
 	background-color: #373737;
 	color: white;
 	padding: 0.7rem;
@@ -24,6 +30,95 @@
 	cursor: pointer;
 }
 
-.cart-container button:hover {
-	opacity: 0.8;;
+.cart-empty-container button:hover {
+	opacity: 0.8;
+}
+
+/*Cart */
+
+.cart-container {
+	width: 60%;
+	margin: 2rem auto;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+    align-items: center;
+}
+
+.cart-summary {
+	display: flex;
+    border-top: dashed;
+    padding-top: 1rem;
+    width: 100%;
+}
+
+.sum-left,
+.sum-right {
+	width: 50%;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+}
+
+.sum-left p {
+    padding: 0 0.3rem;
+    font-size: 1.5rem;
+}
+.price {
+    font-weight: 600;
+}
+
+.cart-buy-btn {
+	color: #b6002c;
+	border-color: #b6002c;
+    border-style: solid;
+    background-color: white;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    width: 70%;
+    cursor: pointer;
+}
+
+.cart-buy-btn:hover {
+	color: white;
+	background-color: #b6002c;
+}
+
+
+/*CartItem */
+
+.ci-container {
+	display: flex;
+	border: 1px solid;
+	height: 12rem;
+    width: 100%;
+}
+
+.ci-left {
+	width: 30%;
+	padding: 0.5rem;
+}
+
+.ci-right {
+	width: 70%;
+	background-color: #e9e9e9;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0.5rem;
+}
+
+.ci-right-top {
+	display: flex;
+	justify-content: space-between;
+}
+
+.ci-right-bottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+.ci-counter-panel {
+	display: flex;
 }

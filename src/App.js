@@ -11,7 +11,7 @@ import Kitchen from "./components/Categories-pages/Kitchen";
 import Lamps from "./components/Categories-pages/Lamps";
 import SkinCare from "./components/Categories-pages/SkinCare";
 import ProductPage from "./components/ProductPage";
-import CartEmpty from "./components/CartEmpty";
+import Cart from "./components/Cart";
 import NoMatch from "./components/NoMatch";
 import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
@@ -34,7 +34,7 @@ const App = () => {
 					<Route path='lamps' element={<Lamps />} />
 					<Route path='skin-care' element={<SkinCare />} />
 				</Route>
-				<Route path="cart" element={<CartEmpty />} />
+				<Route path="cart" element={<Cart />} />
 				<Route path='product/:id' element={<ProductPage />} />
 				<Route path='*' element={<NoMatch />} />
 			</Routes>
