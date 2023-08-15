@@ -1,6 +1,6 @@
 import React from "react";
 import emptyPicture from "../images/cart/empty-cart.png";
-import "../components/Cart.css";
+import "../components/CartEmpty.css";
 import { Link } from "react-router-dom";
 
 const CartEmpty = () => {

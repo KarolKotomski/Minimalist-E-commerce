@@ -1,16 +1,17 @@
 import React from "react";
-import "../components/Cart.css";
+import "../components/CartItem.css";
+import { items } from "./AllData";
 
 const CartItem = () => {
 	return (
 		<div className="ci-container">
 			<div className="ci-left">
-				<img src='' alt='' />
+				<img src={items[0].img} alt='' />
 			</div>
 			<div className="ci-right">
 				<div className="ci-right-top">
-					<p>title</p>
-					<p>price</p>
+					<p>{items[0].description}</p>
+					<p>{items[0].price} $</p>
 				</div>
 				<div className="ci-right-bottom">
 					<div className="ci-counter-panel">

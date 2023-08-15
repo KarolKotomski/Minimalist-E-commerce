@@ -1,0 +1,34 @@
+.ci-container {
+	display: flex;
+	border: 1px solid;
+	height: 12rem;
+    width: 100%;
+}
+
+.ci-left {
+	width: 30%;
+	padding: 0.5rem;
+}
+
+.ci-right {
+	width: 70%;
+	background-color: #e9e9e9;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0.5rem;
+}
+
+.ci-right-top {
+	display: flex;
+	justify-content: space-between;
+}
+
+.ci-right-bottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+.ci-counter-panel {
+	display: flex;
+}

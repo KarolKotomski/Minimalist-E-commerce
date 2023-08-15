@@ -2,6 +2,7 @@ import React from "react";
 import CartItem from "./CartItem";
 import "../components/Cart.css";
 
+
 const Cart = () => {
 	// Jeśli koszyk jest pusty to:
 	// return <CartEmpty />
