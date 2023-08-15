@@ -11,7 +11,7 @@ const CartItem = () => {
 			<div className="ci-right">
 				<div className="ci-right-top">
 					<p>{items[0].description}</p>
-					<p>{items[0].price} $</p>
+					<p className="ci-price">$ {items[0].price}</p>
 				</div>
 				<div className="ci-right-bottom">
 					<div className="ci-counter-panel">
@@ -19,7 +19,7 @@ const CartItem = () => {
 						<p>1</p>
 						<button>+</button>
 					</div>
-					<button className="ci-remove">remove</button>
+					<button className="ci-remove">remove item</button>
 				</div>
 			</div>
 		</div>

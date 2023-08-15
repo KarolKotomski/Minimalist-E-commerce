@@ -18,7 +18,7 @@ const TrendingItem = () => {
 						</div>
 						<div className='product-trending-details'>
 							<p>{item.description}</p>
-							<p className='item-trending-price'>{item.price} $</p>
+							<p className='item-trending-price'>$ {item.price}</p>
 						</div>
 					</Link>
 				</div>

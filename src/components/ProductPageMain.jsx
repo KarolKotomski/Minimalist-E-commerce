@@ -68,7 +68,7 @@ const ProductPageMain = () => {
 										<button onClick={increase}>+</button>
 									</div>
 									<div className='price-container'>
-										<p className='quant-price-text'>{calcPrice(quantity)} $</p>
+										<p className='quant-price-text'>$ {calcPrice(quantity)}</p>
 									</div>
 								</div>
 								<div className='shopping-buttons'>

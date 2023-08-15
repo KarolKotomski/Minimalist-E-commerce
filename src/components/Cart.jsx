@@ -20,7 +20,7 @@ const Cart = () => {
 					<div className='cart-summary'>
 						<div className='sum-left'>
 							<p>subtotal:</p>
-							<p className="price">99999 $</p>
+							<p className="price">$ 99999</p>
 						</div>
 						<div className='sum-right'>
 							<button className="cart-buy-btn">buy now</button>

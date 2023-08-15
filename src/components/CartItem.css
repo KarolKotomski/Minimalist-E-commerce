@@ -1,13 +1,19 @@
 .ci-container {
 	display: flex;
 	border: 1px solid;
-	height: 12rem;
-    width: 100%;
+	height: 10rem;
+	width: 100%;
 }
 
 .ci-left {
 	width: 30%;
 	padding: 0.5rem;
+}
+
+.ci-left img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .ci-right {
@@ -16,7 +22,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding: 0.5rem;
+	padding: 1.3rem;
+	font-size: 1.3rem;
 }
 
 .ci-right-top {
@@ -26,9 +33,35 @@
 
 .ci-right-bottom {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .ci-counter-panel {
 	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.ci-counter-panel button {
+	font-size: 1.3rem;
+	width: 2rem;
+	height: 2rem;
+	background-color: #e9e9e9;
+	cursor: pointer;
+	border: solid 2px;
+}
+
+.ci-counter-panel button:hover {
+	background-color: black;
+	color: white;
+}
+
+.ci-remove {
+	width: 20%;
+	text-transform: uppercase;
+}
+
+.ci-price {
+    font-weight: 600;
+    padding-left: 2rem;
 }
