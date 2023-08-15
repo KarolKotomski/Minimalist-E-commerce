@@ -15,7 +15,6 @@ const Newsletter = () => {
 		}
 
 		toast.success("Subscription success!");
-
 		setInputValue("");
 	};
 

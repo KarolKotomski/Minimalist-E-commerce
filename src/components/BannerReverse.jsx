@@ -17,7 +17,7 @@ const BannerReverse = () => {
 						</div>
 					</div>
 					<div className='img-side'>
-						<img src={banner2}></img>
+						<img src={banner2} alt=""></img>
 					</div>
 				</div>
 			</div>

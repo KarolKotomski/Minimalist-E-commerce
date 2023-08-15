@@ -10,15 +10,17 @@ const Navbar = () => {
 			<div className='container'>
 				<div className='navbar-container'>
 					<div className='logo'>
-						<Link to='/'>
+						<Link to='/' onClick={() => window.scrollTo(0, 0)}>
 							<img src={logo} alt='logotype'></img>
 							<h1>online shop</h1>
 						</Link>
 					</div>
 					<div className='nav-links'>
-						<Link to='/categories'>categories</Link>
-						<Link to='/cart'>
-							<img src={cart} className='cart-icon' alt=""></img>
+						<Link to='/categories' onClick={() => window.scrollTo(0, 0)}>
+							categories
+						</Link>
+						<Link to='/cart' onClick={() => window.scrollTo(0, 0)}>
+							<img src={cart} className='cart-icon' alt=''></img>
 						</Link>
 					</div>
 				</div>

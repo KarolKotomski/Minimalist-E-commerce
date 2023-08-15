@@ -17,7 +17,7 @@ const Banner = () => {
 						</div>
 					</div>
 					<div className='img-side'>
-						<img src={banner1}></img>
+						<img src={banner1} alt=""></img>
 					</div>
 				</div>
 			</div>
