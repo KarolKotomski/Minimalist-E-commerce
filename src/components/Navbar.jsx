@@ -16,7 +16,7 @@ const Navbar = () => {
 						</Link>
 					</div>
 					<div className='nav-links'>
-						<Link to='/categories' onClick={() => window.scrollTo(0, 0)}>
+						<Link to='/categories/all' onClick={() => window.scrollTo(0, 0)}>
 							categories
 						</Link>
 						<Link to='/cart' onClick={() => window.scrollTo(0, 0)}>

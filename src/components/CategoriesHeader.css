@@ -7,7 +7,7 @@
 
 .cat-main-header {
 	padding-bottom: 2rem;
-    text-transform: capitalize;
+	text-transform: capitalize;
 }
 
 .filter-btns {
@@ -21,12 +21,16 @@
 	padding: 0 1.2rem;
 	background-color: white;
 	border: none;
-    text-transform: capitalize;
-    font-size: 1.2rem;
-    cursor: pointer;
+	text-transform: capitalize;
+	font-size: 1.2rem;
+	cursor: pointer;
 }
 
 .filter-btns button:hover {
-    background-color: black;
-    color: white;
+	text-decoration: underline;
+}
+
+.active button {
+	background-color: black;
+	color: white;
 }
