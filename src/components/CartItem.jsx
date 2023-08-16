@@ -3,6 +3,7 @@ import "../components/CartItem.css";
 import { items } from "./AllData";
 
 const CartItem = () => {
+
 	const [quantity, setQuantity] = useState(1);
 
 	const increase = () => {

@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import CartItem from "./CartItem";
 import "../components/Cart.css";
+import { CartContext } from "../context/CartContext";
+import { items } from "../components/AllData";
 
 const Cart = () => {
 	// Jeśli koszyk jest pusty to:
 	// return <CartEmpty />
 
-	//Jeśli nie jest pusty to:
+	//Jeśli koszyk nie jest pusty to:
+	const { cartItems } = useContext(CartContext);
+
 	return (
 		<div className='cart'>
 			<div className='container'>
@@ -14,8 +18,13 @@ const Cart = () => {
 					<div className='cart-header'>
 						<h2>Your cart items:</h2>
 					</div>
-					<CartItem />
-					<CartItem />
+					<div>
+						{items.map((item) => {
+							if (cartItems[item.id] !== 0) {
+								return <CartItem key={item.id} />;
+							}
+						})}
+					</div>
 					<div className='cart-summary'>
 						<div className='sum-right'>
 							<button className='cart-buy-btn'>buy now</button>
