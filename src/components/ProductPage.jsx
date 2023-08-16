@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "../components/ProductPage.css";
 import { items } from "./AllData";
 import { useParams } from "react-router-dom";
 import Trending from "./Trending";
+import { CartContext } from "../context/CartContext";
 
 const ProductPage = () => {
+	const { addToCart } = useContext(CartContext);
+
 	const { id } = useParams();
 	const item = items.filter((item) => item.id === Number(id));
 
@@ -73,8 +76,7 @@ const ProductPage = () => {
 									</div>
 								</div>
 								<div className='shopping-buttons'>
-									<button
-										className='atc-button'>
+									<button className='atc-button' onClick={() => addToCart()}>
 										add to cart
 									</button>
 									<button className='buy-btn'>buy now</button>
