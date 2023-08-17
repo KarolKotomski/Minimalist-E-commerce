@@ -27,10 +27,10 @@ const Cart = () => {
 								})}
 							</>
 							<div className='cart-summary'>
-								<div className='sum-right'>
+								<div className='summ-left'>
 									<button className='cart-buy-btn'>buy now</button>
 								</div>
-								<div className='sum-left'>
+								<div className='summ-right'>
 									<p>total:</p>
 									<p className='price'>$ {totalAmount} </p>
 								</div>
