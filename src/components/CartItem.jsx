@@ -1,42 +1,26 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import "../components/CartItem.css";
-import { items } from "./AllData";
+import { CartContext } from "../context/CartContext";
 
-const CartItem = () => {
-
-	const [quantity, setQuantity] = useState(1);
-
-	const increase = () => {
-		if (quantity >= 0) {
-			setQuantity(quantity + 1);
-		}
-	};
-
-	const decrease = () => {
-		if (quantity > 0) {
-			setQuantity(quantity - 1);
-		}
-    };
-    
-    const calcPrice = (quantity) => {
-        return quantity * items[0].price;
-    }
+const CartItem = (props) => {
+	const { cartItems, addToCart, removeFromCart, updateCartItemCount } = useContext(CartContext);
+	const { id, img, description, price } = props.data;
 
 	return (
 		<div className='ci-container'>
 			<div className='ci-left'>
-				<img src={items[0].img} alt='' />
+				<img src={img} alt='' />
 			</div>
 			<div className='ci-right'>
 				<div className='ci-right-top'>
-					<p>{items[0].description}</p>
-                    <p className='ci-price'>$ {calcPrice(quantity)}</p>
+					<p>{description}</p>
+					<p className='ci-price'>${price} </p>
 				</div>
 				<div className='ci-right-bottom'>
 					<div className='ci-counter-panel'>
-						<button onClick={decrease}>-</button>
-						<p>{quantity}</p>
-						<button onClick={increase}>+</button>
+						<button onClick={() => removeFromCart(id)}>-</button>
+						<input value={cartItems[id]} onChange={(e)=> updateCartItemCount(Number(e.target.value), id)}/>
+						<button onClick={() => addToCart(id)}>+</button>
 					</div>
 					<button className='ci-remove'>remove item</button>
 				</div>

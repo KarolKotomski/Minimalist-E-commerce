@@ -9,7 +9,9 @@ const Cart = () => {
 	// return <CartEmpty />
 
 	//Jeśli koszyk nie jest pusty to:
-	const { cartItems } = useContext(CartContext);
+	const { cartItems, getTotalCartAmount } = useContext(CartContext);
+
+	const totalAmount=getTotalCartAmount()
 
 	return (
 		<div className='cart'>
@@ -21,7 +23,7 @@ const Cart = () => {
 					<div>
 						{items.map((item) => {
 							if (cartItems[item.id] !== 0) {
-								return <CartItem key={item.id} />;
+								return <CartItem data={item} key={item.id} />;
 							}
 						})}
 					</div>
@@ -31,7 +33,7 @@ const Cart = () => {
 						</div>
 						<div className='sum-left'>
 							<p>subtotal:</p>
-							<p className='price'>$ 99999</p>
+							<p className='price'>$ {totalAmount} </p>
 						</div>
 					</div>
 				</div>

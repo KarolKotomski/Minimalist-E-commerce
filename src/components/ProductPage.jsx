@@ -19,7 +19,6 @@ const ProductPage = () => {
 
 	const cartItemsAmount = cartItems[id];
 
-
 	return (
 		<>
 			<div className='product-page'>
@@ -51,7 +50,8 @@ const ProductPage = () => {
 
 								<div className='shopping-buttons'>
 									<button className='atc-button' onClick={() => addToCart(id)}>
-										add to cart {cartItemsAmount>0 && <>({cartItemsAmount})</>}
+										add to cart{" "}
+										{cartItemsAmount > 0 && <>({cartItemsAmount})</>}
 									</button>
 									<button className='buy-btn'>buy now</button>
 								</div>
