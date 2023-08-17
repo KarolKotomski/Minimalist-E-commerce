@@ -48,7 +48,15 @@
 	font-size: 2rem;
 }
 
+.cart-icon-empty:hover {
+	opacity: 0.8;
+}
+
 .cart-icon-full {
 	color: red;
 	font-size: 2rem;
+}
+
+.cart-icon-full:hover {
+	opacity: 0.8;
 }

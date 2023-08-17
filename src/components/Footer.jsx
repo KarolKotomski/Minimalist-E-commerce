@@ -6,10 +6,10 @@ const Footer = () => {
 	return (
 		<footer className='footer'>
 			<div className='footer-links'>
-				<Link to="/">about us</Link>
-				<Link to="/">FAQs</Link>
-				<Link to="/">career</Link>
-				<Link to="/">contact us</Link>
+				<Link>about us</Link>
+				<Link>FAQs</Link>
+				<Link >career</Link>
+				<Link>contact us</Link>
 			</div>
 			<div className='design'>
 				<Link to="https://github.com/Abderraouf-Rahmani">Design by Abderraouf</Link>

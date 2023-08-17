@@ -32,7 +32,7 @@ const Cart = () => {
 									<button className='cart-buy-btn'>buy now</button>
 								</div>
 								<div className='summ-right'>
-									<p>total:</p>
+									<p>Total:</p>
 									<p className='price'>$ {totalAmount} </p>
 								</div>
 							</div>

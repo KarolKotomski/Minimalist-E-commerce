@@ -46,7 +46,7 @@ const App = () => {
 						position='top-center'
 						autoClose={3000}
 						hideProgressBar={false}
-						newestOnTop
+						newestOnTop={false}
 						closeOnClick
 						rtl={false}
 						pauseOnFocusLoss={false}
