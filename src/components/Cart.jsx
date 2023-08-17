@@ -1,41 +1,44 @@
 import React, { useContext } from "react";
 import CartItem from "./CartItem";
+import CartEmpty from "../components/CartEmpty";
 import "../components/Cart.css";
 import { CartContext } from "../context/CartContext";
 import { items } from "../components/AllData";
 
 const Cart = () => {
-	// Jeśli koszyk jest pusty to:
-	// return <CartEmpty />
-
-	//Jeśli koszyk nie jest pusty to:
 	const { cartItems, getTotalCartAmount } = useContext(CartContext);
 
-	const totalAmount=getTotalCartAmount()
+	const totalAmount = getTotalCartAmount();
 
 	return (
 		<div className='cart'>
 			<div className='container'>
 				<div className='cart-container'>
-					<div className='cart-header'>
-						<h2>Your cart items:</h2>
-					</div>
-					<div>
-						{items.map((item) => {
-							if (cartItems[item.id] !== 0) {
-								return <CartItem data={item} key={item.id} />;
-							}
-						})}
-					</div>
-					<div className='cart-summary'>
-						<div className='sum-right'>
-							<button className='cart-buy-btn'>buy now</button>
-						</div>
-						<div className='sum-left'>
-							<p>subtotal:</p>
-							<p className='price'>$ {totalAmount} </p>
-						</div>
-					</div>
+					{totalAmount > 0 ? (
+						<>
+							<div className='cart-header'>
+								<h2>Your cart items:</h2>
+							</div>
+							<>
+								{items.map((item) => {
+									if (cartItems[item.id] !== 0) {
+										return <CartItem data={item} key={item.id} />;
+									}
+								})}
+							</>
+							<div className='cart-summary'>
+								<div className='sum-right'>
+									<button className='cart-buy-btn'>buy now</button>
+								</div>
+								<div className='sum-left'>
+									<p>total:</p>
+									<p className='price'>$ {totalAmount} </p>
+								</div>
+							</div>
+						</>
+					) : (
+						<CartEmpty />
+					)}
 				</div>
 			</div>
 		</div>

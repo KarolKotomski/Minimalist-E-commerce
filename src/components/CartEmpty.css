@@ -5,12 +5,12 @@
 .cart-empty-container {
 	display: flex;
 	flex-direction: column;
-	padding-top: 8rem;
+
 	align-items: center;
 }
 
 .cart-empty-container img {
-	padding: 3rem;
+	padding-bottom: 3rem;
 }
 
 .cart-empty-container p {

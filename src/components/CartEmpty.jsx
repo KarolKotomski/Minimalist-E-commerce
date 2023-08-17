@@ -10,7 +10,7 @@ const CartEmpty = () => {
 				<div className='cart-empty-container'>
 					<img src={emptyPicture} alt='' />
 					<p>Your cart is empty</p>
-					<Link to="/categories">
+					<Link to="/categories/all">
 						<button>Continue Shopping</button>
 					</Link>
 				</div>
