@@ -43,6 +43,12 @@
 	text-decoration: underline;
 }
 
-.cart-icon {
-	height: 2rem;
+.cart-icon-empty {
+	color: black;
+	font-size: 2rem;
+}
+
+.cart-icon-full {
+	color: red;
+	font-size: 2rem;
 }

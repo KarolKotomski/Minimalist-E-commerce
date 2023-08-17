@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import { CartContext } from "../context/CartContext";
 import "./Navbar.css";
 import logo from "../images/main-img/s-logo.png";
-import cart from "../images/icons/cart.png";
 import { Link } from "react-router-dom";
+import { TfiShoppingCart, TfiShoppingCartFull } from "react-icons/tfi";
 
 const Navbar = () => {
+	const { getTotalCartAmount } = useContext(CartContext);
+
+	const totalAmount = getTotalCartAmount();
+
 	return (
 		<nav className='navbar'>
 			<div className='container'>
@@ -20,7 +25,13 @@ const Navbar = () => {
 							categories
 						</Link>
 						<Link to='/cart' onClick={() => window.scrollTo(0, 0)}>
-							<img src={cart} className='cart-icon' alt=''></img>
+							<>
+								{totalAmount === 0 ? (
+									<TfiShoppingCart className='cart-icon-empty' />
+								) : (
+									<TfiShoppingCartFull className='cart-icon-full' />
+								)}
+							</>
 						</Link>
 					</div>
 				</div>

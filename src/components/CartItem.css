@@ -1,7 +1,7 @@
 .ci-container {
 	display: flex;
 	border: 1px solid #e9e9e9;
-	height:9rem;
+	height: 9rem;
 	width: 70%;
 	justify-content: center;
 }
@@ -58,19 +58,17 @@
 }
 
 .ci-remove {
-	width: 20%;
-	text-transform: uppercase;
-    color: black;
-    border: solid 2px;
+	font-size: 1.7rem;
+	color: black;
 }
 
 .ci-remove:hover {
-    color: #b6002c
+	color: #b6002c;
 }
 
 .ci-price {
-    font-weight: 600;
-    padding-left: 2rem;
+	font-weight: 600;
+	padding-left: 2rem;
 }
 
 .counter-input {

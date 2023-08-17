@@ -1,13 +1,12 @@
 import React, { useContext } from "react";
 import "../components/CartItem.css";
 import { CartContext } from "../context/CartContext";
+import { BsTrash3 } from "react-icons/bs";
 
 const CartItem = (props) => {
 	const { cartItems, addToCart, removeFromCart, updateCartItemCount } =
 		useContext(CartContext);
 	const { id, img, description, price } = props.data;
-
-
 
 	return (
 		<div className='ci-container'>
@@ -37,7 +36,10 @@ const CartItem = (props) => {
 						/>
 						<button onClick={() => addToCart(id)}>+</button>
 					</div>
-					<button className='ci-remove' onClick={()=> updateCartItemCount(0, id)}>remove item</button>
+					<BsTrash3
+						className='ci-remove'
+						onClick={() => updateCartItemCount(0, id)}
+					/>
 				</div>
 			</div>
 		</div>
