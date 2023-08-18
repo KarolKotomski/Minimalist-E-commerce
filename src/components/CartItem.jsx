@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "../components/CartItem.css";
 import { CartContext } from "../context/CartContext";
 import { BsTrash3 } from "react-icons/bs";
+import { toast } from "react-toastify";
 
 const CartItem = (props) => {
 	const { cartItems, addToCart, removeFromCart, updateCartItemCount } =
@@ -38,7 +39,10 @@ const CartItem = (props) => {
 					</div>
 					<BsTrash3
 						className='ci-remove'
-						onClick={() => updateCartItemCount(0, id)}
+						onClick={() => {
+							updateCartItemCount(0, id);
+							toast.info("Item removed from the cart");
+						}}
 					/>
 				</div>
 			</div>

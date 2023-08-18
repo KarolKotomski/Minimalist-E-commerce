@@ -1,5 +1,6 @@
 import React, { createContext, useEffect, useState } from "react";
 import { items } from "../components/AllData";
+import { toast } from "react-toastify";
 
 export const CartContext = createContext();
 
@@ -44,7 +45,12 @@ export const CartContextProvider = (props) => {
 	};
 
 	const updateCartItemCount = (newAmount, itemId) => {
-		setCartItems((prev) => ({ ...prev, [itemId]: newAmount }));
+		if (isNaN(newAmount)) {
+			setCartItems((prev) => ({ ...prev, [itemId]: 1 }));
+			toast.info("Provided value is incorrect!");
+		} else {
+			setCartItems((prev) => ({ ...prev, [itemId]: newAmount }));
+		}
 	};
 
 	const contextValue = {
