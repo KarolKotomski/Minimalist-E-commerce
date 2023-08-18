@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "../components/ProductPage.css";
 import { items } from "./AllData";
 import { useParams } from "react-router-dom";
@@ -18,6 +18,10 @@ const ProductPage = () => {
 	};
 
 	const cartItemsAmount = cartItems[id];
+
+	useEffect(() => {
+		setImage(item[0].img);
+	}, [id]);
 
 	return (
 		<>
