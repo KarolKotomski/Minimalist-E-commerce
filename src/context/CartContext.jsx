@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import { items } from "../components/AllData";
 
 export const CartContext = createContext();
@@ -11,8 +11,18 @@ const getDefaultCart = () => {
 	return cart;
 };
 
+const cartFromLocalStorage = JSON.parse(localStorage.getItem("cart"));
+
 export const CartContextProvider = (props) => {
-	const [cartItems, setCartItems] = useState(getDefaultCart());
+	const [cartItems, setCartItems] = useState(cartFromLocalStorage);
+
+	useEffect(() => {
+		if (!cartItems) {
+			setCartItems(getDefaultCart());
+		}
+		const json = JSON.stringify(cartItems);
+		localStorage.setItem("cart", json);
+	}, [cartItems]);
 
 	const getTotalCartAmount = () => {
 		let totalAmount = 0;

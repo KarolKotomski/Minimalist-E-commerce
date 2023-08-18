@@ -10,8 +10,9 @@
 .cart-summary {
 	display: flex;
 	border-top: dashed;
-	padding-top: 1rem;
+	padding-top: 2rem;
 	width: 100%;
+	margin-top: 2rem;
 }
 
 .summ-left,

@@ -20,6 +20,8 @@ import "react-toastify/dist/ReactToastify.css";
 import { CartContextProvider } from "./context/CartContext";
 
 const App = () => {
+
+
 	return (
 		<>
 			<CartContextProvider>
