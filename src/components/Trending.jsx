@@ -7,12 +7,12 @@ import TrendingItem from "./TrendingItem";
 const Trending = () => {
 	const slideRight = () => {
 		const slider = document.getElementById("slider");
-		slider.scrollLeft = slider.scrollLeft + 200;
+		slider.scrollLeft = slider.scrollLeft + 244.8;
 	};
 
 	const slideLeft = () => {
 		const slider = document.getElementById("slider");
-		slider.scrollLeft = slider.scrollLeft - 200;
+		slider.scrollLeft = slider.scrollLeft - 244.8;
 	};
 
 	return (

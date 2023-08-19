@@ -4,6 +4,7 @@ import { toast } from "react-toastify";
 
 export const CartContext = createContext();
 
+//default cart
 const getDefaultCart = () => {
 	const cart = {};
 	for (let i = 1; i < items.length + 1; i++) {
@@ -12,8 +13,11 @@ const getDefaultCart = () => {
 	return cart;
 };
 
+//local storage
 const cartFromLocalStorage = JSON.parse(localStorage.getItem("cart"));
 
+
+//context provider
 export const CartContextProvider = (props) => {
 	const [cartItems, setCartItems] = useState(cartFromLocalStorage);
 
@@ -25,6 +29,8 @@ export const CartContextProvider = (props) => {
 		localStorage.setItem("cart", json);
 	}, [cartItems]);
 
+	
+	//cart funcionality
 	const getTotalCartAmount = () => {
 		let totalAmount = 0;
 		for (const item in cartItems) {
@@ -47,12 +53,14 @@ export const CartContextProvider = (props) => {
 	const updateCartItemCount = (newAmount, itemId) => {
 		if (isNaN(newAmount)) {
 			setCartItems((prev) => ({ ...prev, [itemId]: 1 }));
-			toast.info("Provided value is incorrect!");
+			toast.warn("Provided value is incorrect!");
 		} else {
 			setCartItems((prev) => ({ ...prev, [itemId]: newAmount }));
 		}
 	};
 
+
+	// exported context values
 	const contextValue = {
 		cartItems,
 		addToCart,
