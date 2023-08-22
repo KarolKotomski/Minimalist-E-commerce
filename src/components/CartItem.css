@@ -82,13 +82,20 @@
 	font-size: 1rem;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1030px) {
 	.ci-container {
 		width: 100%;
 		height: 7rem;
 	}
 	.ci-right {
 		padding: 0.5rem;
+	}
+	.ci-right {
+		padding: 0.5rem;
+		font-size: 0.9rem;
+	}
+	.ci-unit-price {
+		font-size: 0.8rem;
 	}
 }
 
@@ -101,7 +108,7 @@
 	}
 	.ci-right {
 		padding: 0.5rem;
-		font-size: 1rem;
+		font-size: 0.8rem;
 	}
 	.ci-unit-price {
 		font-size: 0.7rem;
@@ -128,10 +135,10 @@
 	}
 	.ci-right {
 		padding: 0.3rem;
-		font-size: 0.8rem;
+		font-size: 0.7rem;
 	}
 	.ci-unit-price {
-		font-size: 0.6rem;
+		font-size: 0.5rem;
 	}
 	.ci-remove {
 		font-size: 1rem;
@@ -144,15 +151,27 @@
 	.counter-input {
 		width: 1.2rem;
 	}
+	.ci-price {
+		padding-left: 1rem;
+	}
 }
 
-@media (max-width: 340px) {
+@media (max-width: 410px) {
 	.ci-right {
 		font-size: 0.6rem;
 	}
 	.ci-unit-price {
 		font-size: 0.5rem;
 	}
-
-
+}
+@media (max-width: 370px) {
+	.ci-right {
+		font-size: 0.5rem;
+	}
+	.ci-unit-price {
+		font-size: 0.4rem;
+	}
+	.ci-price {
+		padding-left: 0.5rem;
+	}
 }

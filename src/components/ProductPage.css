@@ -237,4 +237,10 @@
 	.buy-btn {
 		font-size: 0.8rem;
 	}
+	.title-header {
+		font-size: 1rem;
+	}
+	.product-spec {
+		font-size: 0.6rem;
+	}
 }
