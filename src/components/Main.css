@@ -56,3 +56,43 @@
 .overlay:hover {
 	background-color: rgba(0, 0, 0, 0.5);
 }
+
+@media (max-width: 900px) {
+	.main-container {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"one"
+			"two"
+			"three"
+			"four";
+	}
+
+	.main {
+		padding-top: 8.5rem;
+	}
+}
+
+@media (max-width: 700px) {
+	.main {
+		padding-top: 6rem;
+	}
+	.main-description {
+		font-size: 1.7rem;
+	}
+}
+
+@media (max-width: 500px) {
+	.main-description {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 375px) {
+	.main {
+		padding-top: 4.5rem;
+	}
+
+	.main-description {
+		font-size: 1.3rem;
+	}
+}

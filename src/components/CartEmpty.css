@@ -5,12 +5,12 @@
 .cart-empty-container {
 	display: flex;
 	flex-direction: column;
-
 	align-items: center;
 }
 
 .cart-empty-container img {
 	padding-bottom: 3rem;
+	width: 100%;
 }
 
 .cart-empty-container p {
@@ -30,4 +30,44 @@
 
 .cart-empty-container button:hover {
 	opacity: 0.8;
+}
+
+@media (max-width: 700px) {
+	.cart {
+		padding-top: 4rem;
+	}
+	.cart-empty-container img {
+		padding-bottom: 2rem;
+		width: 70%;
+	}
+
+	.cart-empty-container button {
+		padding: 0.7rem;
+		font-size: 1rem;
+	}
+
+	.cart-empty-container p {
+		padding-bottom: 2rem;
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 375px) {
+	.cart {
+		padding-top: 2rem;
+	}
+	.cart-empty-container img {
+		padding-bottom: 1rem;
+		width: 50%;
+	}
+
+	.cart-empty-container button {
+		padding: 0.5rem;
+		font-size: 0.7rem;
+	}
+
+	.cart-empty-container p {
+		padding-bottom: 1rem;
+		font-size: 0.8rem;
+	}
 }

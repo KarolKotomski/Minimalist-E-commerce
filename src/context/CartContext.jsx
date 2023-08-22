@@ -13,14 +13,14 @@ const getDefaultCart = () => {
 	return cart;
 };
 
-//local storage
+//local storage cart- fetching
 const cartFromLocalStorage = JSON.parse(localStorage.getItem("cart"));
-
 
 //context provider
 export const CartContextProvider = (props) => {
 	const [cartItems, setCartItems] = useState(cartFromLocalStorage);
 
+	//local storage cart- setting
 	useEffect(() => {
 		if (!cartItems) {
 			setCartItems(getDefaultCart());
@@ -29,7 +29,6 @@ export const CartContextProvider = (props) => {
 		localStorage.setItem("cart", json);
 	}, [cartItems]);
 
-	
 	//cart funcionality
 	const getTotalCartAmount = () => {
 		let totalAmount = 0;
@@ -59,8 +58,7 @@ export const CartContextProvider = (props) => {
 		}
 	};
 
-
-	// exported context values
+	// gatnered context values
 	const contextValue = {
 		cartItems,
 		addToCart,

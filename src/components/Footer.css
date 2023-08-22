@@ -10,7 +10,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 10rem;
+	gap: 2rem;
 	height: 5rem;
 	width: 100%;
 	text-transform: capitalize;
@@ -30,4 +30,23 @@
 	background-color: cadetblue;
 	width: 100%;
 	text-align: center;
+}
+
+@media (max-width: 700px) {
+	.footer a {
+		font-size: 1rem;
+	}
+	.footer-links {
+		height: 3rem;
+		gap: 1rem;
+	}
+}
+
+@media (max-width: 375px) {
+	.footer a {
+		font-size: 0.8rem;
+	}
+	.footer-links {
+		height: 3rem;
+	}
 }

@@ -1,10 +1,9 @@
 .banner {
-	padding-top: 7rem;
+	padding-top: 5vw;
 }
 
 .banner-container {
 	display: flex;
-	justify-content: space-between;
 	height: 25rem;
 	overflow: hidden;
 }
@@ -15,7 +14,6 @@
 	height: 25rem;
 	overflow: hidden;
 	flex-direction: row-reverse;
-	
 }
 
 .text-side {
@@ -47,7 +45,7 @@
 .text-side button {
 	background-color: #373737;
 	color: white;
-	padding: 0.7rem;
+	padding: 0.5em;
 	font-size: 1.3rem;
 	width: 100%;
 	border: none;
@@ -56,11 +54,46 @@
 }
 
 .text-side button:hover {
-	opacity: 0.8;;
+	opacity: 0.8;
 }
 
 .text {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+@media (max-width: 1450px) {
+	.text-side {
+		padding: 2rem;
+	}
+}
+
+@media (max-width: 1100px) {
+	.text-side {
+		padding: 1rem;
+	}
+
+	.text-side h2 {
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 800px) {
+	.text-side {
+		padding: 0.5rem;
+	}
+
+	.text-side h2 {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 500px) {
+	.text-side h2 {
+		font-size: 1rem;
+	}
+	.text-side button {
+		font-size: 1rem;
+	}
 }

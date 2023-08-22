@@ -60,3 +60,62 @@
 .cart-icon-full:hover {
 	opacity: 0.8;
 }
+
+@media (max-width: 700px) {
+	.logo img {
+		width: 3rem;
+	}
+
+	.logo h1 {
+		font-size: 2rem;
+		padding-left: 1rem;
+	}
+
+	.navbar-container {
+		height: 5rem;
+	}
+}
+
+@media (max-width: 500px) {
+	.logo img {
+		width: 2.5rem;
+	}
+
+	.logo h1 {
+		font-size: 1.5rem;
+		padding-left: 0.5rem;
+	}
+
+	.nav-links {
+		font-size: 1rem;
+		gap: 1.5rem;
+	}
+
+	.cart-icon-empty {
+		font-size: 1.5rem;
+	}
+
+	.cart-icon-full {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 375px) {
+	.logo img {
+		width: 1.8rem;
+	}
+
+	.logo h1 {
+		font-size: 1rem;
+		padding-left: 0.4rem;
+	}
+
+	.nav-links {
+		font-size: 0.7rem;
+		gap: 1.2rem;
+	}
+
+	.navbar-container {
+		height: 3.5rem;
+	}
+}

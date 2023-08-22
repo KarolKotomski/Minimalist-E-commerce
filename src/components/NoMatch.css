@@ -1,6 +1,7 @@
 .pgnf {
-	position: relative;
-	text-align: center;
+	display: flex;
+	height: 20rem;
+	justify-content: center;
+	align-items: center;
 	font-size: 2rem;
-	padding: 15rem;
 }

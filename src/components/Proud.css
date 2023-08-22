@@ -1,5 +1,5 @@
 .proud {
-	padding-top: 5rem;
+	padding-top: 5vw;
 }
 
 .proud h2 {
@@ -10,7 +10,8 @@
 
 .proud-container {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fit, minmax(18rem, 0.15fr));
 	gap: 1.3rem;
 }
 
@@ -51,4 +52,10 @@
 	font-size: 1.5rem;
 	font-weight: 600;
 	padding-top: 0.5rem;
+}
+
+@media (max-width: 500px) {
+	.proud h2 {
+		font-size: 1.2rem;
+	}
 }

@@ -1,5 +1,5 @@
 .newsletter {
-	margin-top: 7rem;
+	margin-top: 5vw;
 	background-color: #373737;
 	color: white;
 	display: flex;
@@ -27,10 +27,41 @@
 	margin-left: 1rem;
 	background-color: #b6002c;
 	color: white;
-	text-transform: capitalize;
+	text-transform: uppercase;
 	cursor: pointer;
 }
 
 .newsletter button:hover {
 	opacity: 0.8;
+}
+
+@media (max-width: 700px) {
+	.newsletter {
+		height: 10rem;
+	}
+
+	.newsletter h2 {
+		font-size: 1.5rem;
+	}
+
+	.newsletter button,
+	.newsletter input {
+		font-size: 1rem;
+	}
+}
+
+
+@media (max-width: 375px) {
+	.newsletter {
+		height: 6rem;
+	}
+
+	.newsletter h2 {
+		font-size: 1rem;
+	}
+
+	.newsletter button,
+	.newsletter input {
+		font-size: 0.6rem;
+	}
 }
