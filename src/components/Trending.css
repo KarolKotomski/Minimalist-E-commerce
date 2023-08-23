@@ -89,3 +89,17 @@
 	font-weight: 600;
 	padding-top: 0.5rem;
 }
+
+@media (max-width: 500px) {
+	.title-btns h3 {
+		font-size: 1.2rem;
+	}
+
+	.buttons img {
+		height: 1rem;
+	}
+	.buttons button {
+		height: 1.5rem;
+		width: 1.5rem;
+	}
+}
