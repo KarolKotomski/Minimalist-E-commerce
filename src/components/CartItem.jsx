@@ -29,11 +29,18 @@ const CartItem = (props) => {
 
 				<div className='ci-right-bottom'>
 					<div className='ci-counter-panel'>
-						<button onClick={() => removeFromCart(id)}>-</button>
+						<button
+							onClick={() => (cartItems[id] > 1 ? removeFromCart(id) : null)}>
+							-
+						</button>
 						<input
 							className='counter-input'
 							value={cartItems[id]}
-							onChange={(e) => updateCartItemCount(Number(e.target.value), id)}
+							onChange={(e) =>
+								Number(e.target.value) > 0
+									? updateCartItemCount(Number(e.target.value), id)
+									: updateCartItemCount(1, id)
+							}
 						/>
 						<button onClick={() => addToCart(id)}>+</button>
 					</div>
