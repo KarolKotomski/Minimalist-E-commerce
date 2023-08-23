@@ -3,6 +3,7 @@ import "../components/CartItem.css";
 import { CartContext } from "../context/CartContext";
 import { BsTrash3 } from "react-icons/bs";
 import { toast } from "react-toastify";
+import { Link } from "react-router-dom";
 
 const CartItem = (props) => {
 	const { cartItems, addToCart, removeFromCart, updateCartItemCount } =
@@ -12,8 +13,11 @@ const CartItem = (props) => {
 	return (
 		<div className='ci-container'>
 			<div className='ci-left'>
-				<img src={img} alt='' />
+				<Link onClick={() => window.scrollTo(0, 0)} to={`/product/${id}`}>
+					<img src={img} alt='' />
+				</Link>
 			</div>
+
 			<div className='ci-right'>
 				<div className='ci-right-top'>
 					<p>{description}</p>
