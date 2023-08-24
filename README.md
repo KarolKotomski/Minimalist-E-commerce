@@ -1,6 +1,7 @@
 
 
-![Logo](https://drive.google.com/file/d/11Yy1R3PCJI3ySy66e2RlqsXgvO1K95KO/view?usp=drive_link)
+![e-commerce logo](https://github.com/KarolKotomski/mini-ecommerce/assets/137051383/e5cb9d2a-237e-4e27-94a2-bcf46b00f401)
+
 
 
 # Minimalist E-Commerce
