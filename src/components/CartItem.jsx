@@ -39,6 +39,7 @@ const CartItem = (props) => {
 						</button>
 						<input
 							className='counter-input'
+							maxLength='2'
 							value={cartItems[id]}
 							onChange={(e) =>
 								Number(e.target.value) > 0
@@ -46,7 +47,7 @@ const CartItem = (props) => {
 									: updateCartItemCount(1, id)
 							}
 						/>
-						<button onClick={() => addToCart(id)}>+</button>
+						<button onClick={() => (cartItems[id] < 99 ? addToCart(id) : null)}>+</button>
 					</div>
 					<BsTrash3
 						className='ci-remove'
