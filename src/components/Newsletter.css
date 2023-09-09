@@ -7,12 +7,14 @@
 	align-items: center;
 	justify-content: center;
 	height: 13rem;
+
 }
 
 .newsletter h2 {
 	font-size: 2rem;
 	padding-bottom: 1rem;
 	font-weight: 400;
+	cursor: default;
 }
 
 .newsletter button,
@@ -49,7 +51,6 @@
 		font-size: 1rem;
 	}
 }
-
 
 @media (max-width: 375px) {
 	.newsletter {

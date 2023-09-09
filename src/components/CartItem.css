@@ -4,6 +4,7 @@
 	height: 8rem;
 	width: 70%;
 	justify-content: center;
+	cursor: default;
 }
 
 .ci-left {
@@ -60,6 +61,7 @@
 .ci-remove {
 	font-size: 1.7rem;
 	color: black;
+	cursor: pointer;
 }
 
 .ci-remove:hover {

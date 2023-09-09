@@ -6,6 +6,7 @@
 	padding-bottom: 2rem;
 	font-weight: 600;
 	font-size: 1.6rem;
+	cursor: default;
 }
 
 .proud-container {
@@ -33,6 +34,7 @@
 }
 .product:hover {
 	outline: 2px solid rgba(0, 0, 0, 0.7);
+	cursor: pointer;
 }
 
 .product-details {
