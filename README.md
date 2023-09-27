@@ -12,9 +12,6 @@ This is a project of the minimalist e-commerce store built using React. The purp
 
 - React JS
 - Vanilla CSS
-- React Router
-- Context API
-
 
 ## Demo
 
