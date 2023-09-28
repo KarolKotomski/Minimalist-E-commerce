@@ -1,12 +1,10 @@
-
-
 ![e-commerce logo](https://github.com/KarolKotomski/mini-ecommerce/assets/137051383/e5cb9d2a-237e-4e27-94a2-bcf46b00f401)
 
 
 
 # Minimalist E-Commerce
 
-This is a project of the minimalist e-commerce store built using React. The purpose of this project is to showcase my skills in building interactive user interfaces and managing application state using React.
+This is a project of the minimalist e-commerce store.
 
 ## Tech Stack
 
