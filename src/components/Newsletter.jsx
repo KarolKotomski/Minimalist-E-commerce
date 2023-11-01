@@ -24,8 +24,8 @@ const Newsletter = () => {
 			<form onSubmit={handleSubmit}>
 				<input
 					type='email'
-					minLength='5'
-					maxLength='30'
+					minLength={5}
+					maxLength={30}
 					placeholder='your@email.com'
 					onChange={(e) => setInputValue(e.target.value)}
 				/>
