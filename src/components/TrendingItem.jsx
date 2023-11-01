@@ -14,7 +14,7 @@ const TrendingItem = () => {
 						onClick={() => window.scrollTo(0, 0)}
 						to={`/product/${item.id}`}>
 						<div className='product-trending-header'>
-							<img src={item.img} alt=''></img>
+							<img src={item.img} alt='item'></img>
 						</div>
 						<div className='product-trending-details'>
 							<p>{item.description}</p>

@@ -14,7 +14,7 @@ const CartItem = (props) => {
 		<div className='ci-container'>
 			<div className='ci-left'>
 				<Link onClick={() => window.scrollTo(0, 0)} to={`/product/${id}`}>
-					<img src={img} alt='' />
+					<img src={img} alt='product' />
 				</Link>
 			</div>
 

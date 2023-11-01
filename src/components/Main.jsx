@@ -16,7 +16,7 @@ const Main = () => {
 							to='categories/furnitures'
 							onClick={() => window.scrollTo(0, 0)}>
 							<div className='overlay'></div>
-							<img src={home1} alt=""></img>
+							<img src={home1} alt="furnitures"></img>
 							<p className='main-description'>Live comfortably</p>
 						</Link>
 					</div>
@@ -25,7 +25,7 @@ const Main = () => {
 							to='categories/skin-care'
 							onClick={() => window.scrollTo(0, 0)}>
 							<div className='overlay'></div>
-							<img src={home2} alt=""></img>
+							<img src={home2} alt="skin-care"></img>
 							<p className='main-description'>Skincare</p>
 						</Link>
 					</div>
@@ -34,7 +34,7 @@ const Main = () => {
 							to='categories/kitchen'
 							onClick={() => window.scrollTo(0, 0)}>
 							<div className='overlay'></div>
-							<img src={home3} alt=""></img>
+							<img src={home3} alt="kitchen"></img>
 							<p className='main-description'>Kitchen</p>
 						</Link>
 					</div>
@@ -43,7 +43,7 @@ const Main = () => {
 							to='categories/electronics'
 							onClick={() => window.scrollTo(0, 0)}>
 							<div className='overlay'></div>
-							<img src={home4} alt=""></img>
+							<img src={home4} alt="electronics"></img>
 							<p className='main-description'>Electronics</p>
 						</Link>
 					</div>

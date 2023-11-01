@@ -8,7 +8,7 @@ const CartEmpty = () => {
 		<div className='cart-empty'>
 			<div className='container'>
 				<div className='cart-empty-container'>
-					<img src={emptyPicture} alt='' />
+					<img src={emptyPicture} alt='empty cart' />
 					<p>Your cart is empty</p>
 					<Link to="/categories/all">
 						<button>Continue Shopping</button>

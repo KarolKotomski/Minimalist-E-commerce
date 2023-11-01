@@ -34,15 +34,15 @@ const ProductPage = () => {
 									<img src={image} alt='' />
 								</div>
 								<div className='small-imgs'>
-									<img src={item[0].img} alt='' onMouseOver={changeImage} />
+									<img src={item[0].img} alt='item' onMouseOver={changeImage} />
 									<img
 										src={item[0].otherImgs[0]}
-										alt=''
+										alt='picture1'
 										onMouseOver={changeImage}
 									/>
 									<img
 										src={item[0].otherImgs[1]}
-										alt=''
+										alt='picture2'
 										onMouseOver={changeImage}
 									/>
 								</div>
