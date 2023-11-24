@@ -11,13 +11,13 @@ const Banner = () => {
 					<div className='text-side'>
 						<div className='text'>
 							<h2>Creative harmonious living</h2>
-							<Link to="categories/all" onClick={() => window.scrollTo(0, 0)}>
+							<Link to='categories/all' onClick={() => window.scrollTo(0, 0)}>
 								<button>shop now</button>
 							</Link>
 						</div>
 					</div>
 					<div className='img-side'>
-						<img src={banner1} alt="banner"></img>
+						<img src={banner1} alt='banner'></img>
 					</div>
 				</div>
 			</div>
